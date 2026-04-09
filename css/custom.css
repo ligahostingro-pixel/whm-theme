@@ -1,0 +1,539 @@
+/* =====================================================
+   LIGA HOSTING — Dark Theme for WHMCS 9 Nexus
+   Clean rewrite using Nexus CSS variable system
+   ===================================================== */
+
+/* ══════════════════════════════════════════════════════
+   1. NEXUS VARIABLE OVERRIDES
+   The Nexus theme reads these variables everywhere.
+   Setting them here makes the entire theme dark.
+   ══════════════════════════════════════════════════════ */
+:root {
+    /* ── Brand colors ── */
+    --liga-cyan: #00d4aa;
+    --liga-purple: #7c3aed;
+    --liga-purple-light: #a78bfa;
+
+    /* ── Nexus neutral palette → dark ── */
+    --neutral-50:  #0d1730;
+    --neutral-100: #111d3a;
+    --neutral-200: #1a2744;
+    --neutral-300: #1e3a5f;
+    --neutral-400: #8892a4;
+    --neutral-500: #a0aec0;
+    --neutral-600: #cbd5e1;
+    --neutral-700: #e2e8f0;
+    --neutral-800: #f1f5f9;
+    --neutral-900: #ffffff;
+    --neutral-950: #ffffff;
+
+    /* ── Nexus primary → purple ── */
+    --primary-50:  #0d1730;
+    --primary-100: #111d3a;
+    --primary-200: #1e1b4b;
+    --primary-300: #312e81;
+    --primary-400: #7c3aed;
+    --primary-500: #7c3aed;
+    --primary-600: #7c3aed;
+    --primary-700: #6d28d9;
+    --primary-800: #5b21b6;
+    --primary-900: #4c1d95;
+    --primary-950: #4c1d95;
+
+    --primary:          #7c3aed;
+    --primary-lifted:   #6d28d9;
+    --primary-accented:  #5b21b6;
+
+    /* ── Nexus semantic colors ── */
+    --secondary:         #8892a4;
+    --secondary-lifted:  #a0aec0;
+    --secondary-accented:#cbd5e1;
+
+    --success:          #22c55e;
+    --success-lifted:   #16a34a;
+    --success-accented: #15803d;
+
+    --info:             #3b82f6;
+    --info-lifted:      #2563eb;
+    --info-accented:    #1d4ed8;
+
+    --notice:           #7c3aed;
+    --notice-lifted:    #6d28d9;
+    --notice-accented:  #5b21b6;
+
+    --warning:          #f59e0b;
+    --warning-lifted:   #d97706;
+    --warning-accented: #b45309;
+
+    --error:            #ef4444;
+    --error-lifted:     #dc2626;
+    --error-accented:   #b91c1c;
+
+    --grayscale:         #ffffff;
+    --grayscale-lifted:  #e2e8f0;
+    --grayscale-accented:#cbd5e1;
+
+    /* ── Nexus text tokens → light text ── */
+    --text:          #e2e8f0;
+    --text-inverted: #060b18;
+    --text-muted:    #8892a4;
+    --text-lifted:   #a0aec0;
+    --text-accented: #cbd5e1;
+
+    /* ── Nexus border tokens → dark borders ── */
+    --border-muted:    #1a2744;
+    --border:          #1e3a5f;
+    --border-lifted:   #2d4a6f;
+    --border-accented: #3d5a8f;
+
+    /* ── Nexus background tokens → dark bg ── */
+    --bg:          #0a1128;
+    --bg-muted:    #060b18;
+    --bg-lifted:   #0d1730;
+    --bg-accented: #111d3a;
+    --bg-inverted: #ffffff;
+
+    /* ── Nexus misc ── */
+    --rounding-sm: 0.375rem;
+    --rounding-md: 0.625rem;
+    --rounding-lg: 0.75rem;
+}
+
+/* ══════════════════════════════════════════════════════
+   2. HARDCODED VALUE OVERRIDES
+   theme.css has some hardcoded white/light values
+   that don't use CSS variables. Override those here.
+   ══════════════════════════════════════════════════════ */
+
+html,
+body {
+    background-color: #060b18 !important;
+    color: #e2e8f0 !important;
+}
+
+/* Bootstrap overrides for hardcoded colors */
+a { color: var(--liga-cyan); }
+a:hover { color: #33e0be; text-decoration: none; }
+
+.bg-white { background-color: #0d1730 !important; }
+.text-dark { color: #e2e8f0 !important; }
+
+/* Hardcoded white backgrounds in theme.css */
+body #order-standard_cart .cart-body .products .product header,
+body #order-standard_cart .domain-selection-options,
+body #order-standard_cart .domain-promo-box,
+body #order-standard_cart .panel .panel-heading,
+body #order-standard_cart .panel .panel-footer,
+body #order-standard_cart .secondary-cart-body .view-cart-tabs .nav-tabs a[aria-expanded=true],
+body #order-standard_cart .secondary-cart-body .view-cart-tabs .tab-content,
+body #order-standard_cart .domain-pricing .bg-white,
+body #order-standard_cart .domain-pricing .tld-pricing-header div,
+body #order-standard_cart .domain-pricing .tld-pricing-header .tld-column,
+body #order-standard_cart .sub-heading span {
+    background-color: var(--bg-lifted) !important;
+    color: var(--text) !important;
+}
+
+body #frmConfigureProduct .form-control {
+    color: var(--text) !important;
+}
+
+/* Modal overrides */
+.modal-content .modal-header {
+    background-color: var(--bg-lifted) !important;
+}
+
+/* ══════════════════════════════════════════════════════
+   3. COMPONENT REFINEMENTS
+   Minor tweaks for components that need polish
+   beyond what the variable system provides.
+   ══════════════════════════════════════════════════════ */
+
+/* Font */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+}
+
+/* Header */
+#header { border-bottom: 1px solid var(--border-muted); }
+.main-navbar-wrapper { border-top: 1px solid var(--border-muted); }
+
+/* Navbar Register button */
+.nav-register a,
+.nav-register .btn-register {
+    background: var(--liga-purple) !important;
+    color: #fff !important;
+    border-radius: 8px !important;
+    padding: 6px 18px !important;
+    font-weight: 600 !important;
+    font-size: 0.87rem !important;
+    border: none !important;
+    transition: all 0.2s;
+}
+.nav-register a:hover,
+.nav-register .btn-register:hover {
+    background: #6d28d9 !important;
+    box-shadow: 0 0 15px rgba(124,58,237,0.2);
+}
+
+/* Navbar icon spacing */
+#nav a i,
+.navbar-nav a i {
+    margin-right: 3px;
+    font-size: 0.85em;
+    opacity: 0.8;
+}
+
+/* Breadcrumb — hide on homepage */
+body.homepage-page .master-breadcrumb { display: none; }
+
+/* Action icon buttons on homepage */
+.action-icon-btns a { transition: all 0.3s; }
+.action-icon-btns a:hover {
+    border-color: var(--liga-cyan) !important;
+    box-shadow: 0 0 15px rgba(0, 212, 170, 0.1);
+    transform: translateY(-2px);
+}
+.action-icon-btns .ico-container i { color: var(--liga-cyan) !important; }
+
+/* Buttons — accent colors */
+.btn-primary {
+    background: var(--liga-purple) !important;
+    border-color: var(--liga-purple) !important;
+}
+.btn-primary:hover, .btn-primary:focus {
+    background: #6d28d9 !important;
+    border-color: #6d28d9 !important;
+}
+.btn-success {
+    background: var(--liga-cyan) !important;
+    border-color: var(--liga-cyan) !important;
+    color: #060b18 !important;
+}
+.btn-success:hover, .btn-success:focus {
+    background: #00b894 !important;
+    border-color: #00b894 !important;
+}
+.btn-default, .btn-secondary {
+    background: var(--bg-lifted) !important;
+    border-color: var(--border-muted) !important;
+    color: var(--text) !important;
+}
+.btn-default:hover, .btn-secondary:hover {
+    background: var(--bg-accented) !important;
+    border-color: var(--border) !important;
+}
+
+/* Card hover */
+.card { transition: border-color 0.2s, box-shadow 0.2s; }
+
+/* Client area tiles */
+.tiles .tile {
+    background: var(--bg-lifted);
+    border: 1px solid var(--border-muted);
+    transition: all 0.2s;
+}
+.tiles .tile:hover {
+    border-color: var(--border);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+.tiles .tile i { color: var(--liga-cyan); }
+
+/* Login page card */
+.login-form .card {
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+/* Domain search on homepage */
+.home-domain-search {
+    background: var(--bg-muted) !important;
+    border-bottom: 1px solid var(--border-muted);
+}
+.home-domain-search h2 { color: var(--text) !important; }
+.home-domain-search .clearfix { background: transparent !important; }
+
+/* Store tabs */
+.store-domain-tab-content {
+    background: var(--bg-lifted) !important;
+    color: var(--text) !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #060b18; }
+::-webkit-scrollbar-thumb { background: #1a2744; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #1e3a5f; }
+
+
+/* ══════════════════════════════════════════════════════
+   4. HOMEPAGE CUSTOM SECTIONS
+   ══════════════════════════════════════════════════════ */
+
+/* ── Hero ── */
+.liga-hero {
+    background: linear-gradient(135deg, #060b18 0%, #0d1a3a 50%, #0a1128 100%);
+    padding: 60px 0 50px;
+    position: relative;
+    overflow: hidden;
+}
+.liga-hero::before {
+    content: '';
+    position: absolute;
+    top: -40%;
+    right: -15%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(124,58,237,0.12) 0%, transparent 70%);
+    pointer-events: none;
+}
+.liga-hero::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -10%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(0,212,170,0.08) 0%, transparent 70%);
+    pointer-events: none;
+}
+.liga-hero .hero-content { position: relative; z-index: 1; }
+.liga-hero .hero-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(0,212,170,0.08);
+    border: 1px solid rgba(0,212,170,0.2);
+    border-radius: 50px;
+    padding: 6px 18px;
+    font-size: 0.85rem;
+    color: var(--liga-cyan);
+    margin-bottom: 20px;
+}
+.liga-hero .hero-status .dot {
+    width: 8px; height: 8px; background: var(--liga-cyan);
+    border-radius: 50%; animation: pulse-dot 2s infinite;
+}
+@keyframes pulse-dot {
+    0%,100% { opacity:1; box-shadow:0 0 0 0 rgba(0,212,170,0.4); }
+    50% { opacity:0.8; box-shadow:0 0 0 6px rgba(0,212,170,0); }
+}
+.liga-hero h1 {
+    font-size: 3rem; font-weight: 800;
+    line-height: 1.15; letter-spacing: -0.02em;
+    margin-bottom: 18px; color: #fff !important;
+}
+.liga-hero h1 .accent {
+    background: linear-gradient(135deg, var(--liga-cyan), #33e0be);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.liga-hero .hero-desc {
+    font-size: 1.05rem; color: #8892a4;
+    line-height: 1.7; max-width: 480px; margin-bottom: 28px;
+}
+.liga-hero .hero-desc strong { color: #fff; }
+.liga-hero .hero-buttons { display: flex; gap: 14px; flex-wrap: wrap; }
+.liga-hero .btn-hero-primary {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--liga-cyan); color: #060b18;
+    padding: 11px 26px; border-radius: 10px;
+    font-weight: 700; font-size: 0.95rem;
+    border: none; transition: all 0.3s; text-decoration: none;
+}
+.liga-hero .btn-hero-primary:hover {
+    background: #33e0be; color: #060b18;
+    box-shadow: 0 0 25px rgba(0,212,170,0.25);
+    transform: translateY(-1px);
+}
+.liga-hero .btn-hero-secondary {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: #0d1730; color: #e2e8f0;
+    padding: 11px 26px; border-radius: 10px;
+    font-weight: 600; font-size: 0.95rem;
+    border: 1px solid #1a2744; transition: all 0.3s; text-decoration: none;
+}
+.liga-hero .btn-hero-secondary:hover {
+    border-color: #1e3a5f; background: #111d3a; color: #fff;
+}
+
+/* Terminal */
+.liga-terminal {
+    background: #0c1222; border: 1px solid #1a2744;
+    border-radius: 12px; overflow: hidden;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.4);
+    position: relative; z-index: 1;
+}
+.liga-terminal .terminal-bar {
+    display: flex; align-items: center; gap: 8px;
+    padding: 10px 14px; background: rgba(255,255,255,0.03);
+    border-bottom: 1px solid #1a2744;
+}
+.liga-terminal .terminal-dot { width: 11px; height: 11px; border-radius: 50%; }
+.liga-terminal .terminal-dot.red { background: #ff5f57; }
+.liga-terminal .terminal-dot.yellow { background: #febc2e; }
+.liga-terminal .terminal-dot.green { background: #28c840; }
+.liga-terminal .terminal-title {
+    margin-left: 8px; font-size: 0.78rem;
+    color: #8892a4; font-family: monospace;
+}
+.liga-terminal .terminal-body {
+    padding: 18px; font-family: 'JetBrains Mono','Fira Code',monospace;
+    font-size: 0.82rem; line-height: 1.8;
+}
+.liga-terminal .line { opacity: 0; animation: typeLine 0.3s forwards; }
+.liga-terminal .line:nth-child(1) { animation-delay: 0.3s; }
+.liga-terminal .line:nth-child(2) { animation-delay: 0.7s; }
+.liga-terminal .line:nth-child(3) { animation-delay: 1.1s; }
+.liga-terminal .line:nth-child(4) { animation-delay: 1.5s; }
+.liga-terminal .line:nth-child(5) { animation-delay: 1.9s; }
+.liga-terminal .line:nth-child(6) { animation-delay: 2.3s; }
+@keyframes typeLine { to { opacity: 1; } }
+.liga-terminal .cmd { color: var(--liga-cyan); }
+.liga-terminal .info { color: #8892a4; }
+.liga-terminal .done { color: #22c55e; }
+.liga-terminal .prompt { color: #8892a4; }
+
+/* Floating badges */
+.liga-float-badge {
+    position: absolute; z-index: 2;
+    background: #0d1730; border: 1px solid #1a2744;
+    border-radius: 10px; padding: 9px 14px;
+    display: flex; align-items: center; gap: 10px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.35);
+    animation: floatBadge 3s ease-in-out infinite;
+}
+@keyframes floatBadge { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-5px)} }
+.liga-float-badge .badge-icon {
+    width: 30px; height: 30px; border-radius: 8px;
+    display: flex; align-items: center; justify-content: center; font-size: 0.85rem;
+}
+.liga-float-badge .badge-icon.purple { background: rgba(124,58,237,0.2); color: #a78bfa; }
+.liga-float-badge .badge-icon.cyan { background: rgba(0,212,170,0.15); color: var(--liga-cyan); }
+.liga-float-badge .badge-label { font-weight: 700; font-size: 0.82rem; color: #fff; line-height: 1.2; }
+.liga-float-badge .badge-sub { font-size: 0.72rem; color: #8892a4; }
+.float-ddos { top: -10px; right: -15px; }
+.float-nvme { bottom: 15px; left: -15px; animation-delay: 1.5s; }
+@media(max-width:991px) {
+    .liga-hero h1 { font-size: 2.2rem; }
+    .liga-float-badge { display: none; }
+}
+@keyframes blink { 50% { border-color: transparent; } }
+
+/* ── Icon strip ── */
+.liga-icon-strip {
+    display: flex; justify-content: center; flex-wrap: wrap; gap: 28px;
+    padding: 20px 0; border-bottom: 1px solid #1a2744;
+}
+.liga-icon-strip .strip-item {
+    display: flex; align-items: center; gap: 7px;
+    color: #8892a4; font-size: 0.83rem; font-weight: 500;
+}
+.liga-icon-strip .strip-item i { color: var(--liga-cyan); }
+
+/* ── Feature cards ── */
+.liga-features { padding: 60px 0; }
+.liga-features .section-label { text-align: center; margin-bottom: 40px; }
+.liga-features .section-label h2 { font-size: 2rem; font-weight: 800; margin-bottom: 10px; }
+.liga-features .section-label p { color: #8892a4; font-size: 1rem; }
+
+.liga-feature-card {
+    background: #0d1730; border: 1px solid #1a2744;
+    border-radius: 12px; padding: 24px; height: 100%;
+    transition: all 0.25s;
+}
+.liga-feature-card:hover {
+    border-color: #1e3a5f;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.25);
+    transform: translateY(-2px);
+}
+.liga-feature-card .feature-icon {
+    width: 40px; height: 40px; border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 14px; font-size: 1.1rem;
+}
+.liga-feature-card .feature-icon.purple { background: rgba(124,58,237,0.15); color: #a78bfa; }
+.liga-feature-card .feature-icon.cyan { background: rgba(0,212,170,0.12); color: var(--liga-cyan); }
+.liga-feature-card .feature-icon.blue { background: rgba(59,130,246,0.12); color: #60a5fa; }
+.liga-feature-card .feature-icon.amber { background: rgba(245,158,11,0.12); color: #fbbf24; }
+.liga-feature-card .feature-icon.green { background: rgba(34,197,94,0.12); color: #4ade80; }
+.liga-feature-card h4 { font-size: 1rem; font-weight: 700; margin-bottom: 8px; }
+.liga-feature-card p { color: #8892a4; font-size: 0.87rem; line-height: 1.6; margin: 0; }
+
+/* Traffic bars */
+.liga-traffic-bar { margin-top: 14px; display: flex; flex-direction: column; gap: 5px; }
+.liga-traffic-bar .bar-row { display: flex; align-items: center; gap: 8px; }
+.liga-traffic-bar .bar-track { flex: 1; height: 7px; background: rgba(255,255,255,0.04); border-radius: 4px; overflow: hidden; }
+.liga-traffic-bar .bar-fill { height: 100%; border-radius: 4px; animation: barGrow 1.5s ease forwards; }
+@keyframes barGrow { from { width: 0; } }
+.bar-fill.legit { width: 85%; background: linear-gradient(90deg, #22c55e, #4ade80); }
+.bar-fill.filtered { width: 60%; background: linear-gradient(90deg, #ef4444, #f87171); }
+.liga-traffic-bar .bar-label { font-size: 0.78rem; color: #8892a4; min-width: 55px; text-align: right; }
+
+/* Stats */
+.liga-stats { display: flex; gap: 32px; margin-top: 14px; }
+.liga-stats .stat-val { font-size: 1.4rem; font-weight: 800; color: #fff; }
+.liga-stats .stat-label { font-size: 0.72rem; color: #8892a4; }
+
+/* ── Datacenter section ── */
+.liga-datacenters { padding: 60px 0; background: #060b18; }
+.liga-datacenters .section-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(0,212,170,0.07); border: 1px solid rgba(0,212,170,0.18);
+    border-radius: 50px; padding: 5px 16px; font-size: 0.78rem;
+    color: var(--liga-cyan); text-transform: uppercase;
+    letter-spacing: 0.04em; font-weight: 600; margin-bottom: 14px;
+}
+.liga-datacenters h2 { font-size: 2rem; font-weight: 800; margin-bottom: 10px; }
+.liga-dc-card {
+    background: #0d1730; border: 1px solid #1a2744;
+    border-radius: 12px; padding: 22px; transition: all 0.25s;
+}
+.liga-dc-card:hover { border-color: var(--liga-cyan); box-shadow: 0 0 15px rgba(0,212,170,0.08); }
+.liga-dc-card .dc-header { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+.liga-dc-card .dc-flag {
+    font-weight: 800; color: #8892a4; background: #060b18;
+    width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;
+    border-radius: 8px; font-size: 0.82rem;
+}
+.liga-dc-card .dc-name { font-weight: 700; font-size: 0.95rem; color: #fff; }
+.liga-dc-card .dc-status { display: flex; align-items: center; gap: 5px; font-size: 0.78rem; color: #22c55e; }
+.liga-dc-card .dc-status .dot { width: 6px; height: 6px; background: #22c55e; border-radius: 50%; }
+.liga-dc-card .dc-specs { display: grid; grid-template-columns: 1fr 1fr; gap: 7px; font-size: 0.78rem; color: #8892a4; }
+.liga-dc-card .dc-specs .spec { display: flex; align-items: center; gap: 5px; }
+.liga-dc-card .dc-specs i { color: var(--liga-cyan); width: 13px; text-align: center; }
+
+/* ══════════════════════════════════════════════════════
+   5. FOOTER
+   ══════════════════════════════════════════════════════ */
+.liga-footer-grid {
+    display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 36px; padding: 50px 0 24px;
+}
+@media(max-width:767px) { .liga-footer-grid { grid-template-columns: 1fr 1fr; gap: 20px; } }
+.liga-footer-grid h5 {
+    font-size: 0.82rem; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.04em; color: #fff; margin-bottom: 14px;
+    position: relative; padding-bottom: 9px;
+}
+.liga-footer-grid h5::after {
+    content: ''; position: absolute; bottom: 0; left: 0;
+    width: 28px; height: 2px; background: var(--liga-purple);
+}
+.liga-footer-grid ul { list-style: none; padding: 0; margin: 0; }
+.liga-footer-grid li { margin-bottom: 7px; }
+.liga-footer-grid li a { color: #8892a4; font-size: 0.87rem; }
+.liga-footer-grid li a:hover { color: #fff; }
+.liga-footer-bottom {
+    display: flex; justify-content: center; flex-wrap: wrap; gap: 20px;
+    padding: 18px 0; border-top: 1px solid #1a2744; margin-top: 18px;
+    font-size: 0.78rem; color: #8892a4;
+}
+.liga-footer-bottom .foot-item { display: flex; align-items: center; gap: 5px; }
+.liga-social a {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 34px; height: 34px; border-radius: 8px;
+    background: #0d1730; border: 1px solid #1a2744;
+    color: #8892a4; margin-right: 6px; transition: all 0.2s;
+}
+.liga-social a:hover { border-color: var(--liga-purple); color: #a78bfa; }
