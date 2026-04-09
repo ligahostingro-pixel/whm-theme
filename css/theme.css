@@ -9499,11 +9499,11 @@ form[data-role=json-form] .has-error .tooltip.top .tooltip-arrow {
 a.admin-inline-edit {
   margin-left: 6px;
   font-weight: 400;
-  color: #888;
+  color: #8892a4;
 }
 
 a.admin-inline-edit:hover {
-  color: #444;
+  color: #cbd5e1;
   text-decoration: none;
 }
 
@@ -10001,8 +10001,8 @@ h6:hover .show-on-hover {
   top: 425px;
   right: 0;
   padding: 5px 15px !important;
-  background-color: rgb(215, 215, 215) !important;
-  color: #777 !important;
+  background-color: #1a2744 !important;
+  color: #a0aec0 !important;
   font-size: 0.9rem !important;
   border-radius: 0 0 var(--rounding-sm) var(--rounding-sm) !important;
   text-decoration: none;
@@ -10011,8 +10011,8 @@ h6:hover .show-on-hover {
   z-index: 500;
 }
 .btn-return-to-admin .floating:hover {
-  background-color: rgb(205, 205, 205) !important;
-  color: #444 !important;
+  background-color: #213254 !important;
+  color: #e2e8f0 !important;
   text-decoration: none;
 }
 
@@ -10892,7 +10892,7 @@ body .sidebar .list-group-item .badge {
   padding: 0;
   list-style: none;
   font-size: 1.4em;
-  color: #888;
+  color: #8892a4;
   font-weight: 300;
 }
 .home-domain-search .tld-logos li {
@@ -11547,17 +11547,17 @@ body .primary-content .btn-success.btn-lg[name=enable]:focus, body .primary-cont
 .verification-banner .btn.close {
   margin-left: 10px;
   background-color: transparent;
-  color: rgba(55, 55, 55, 0.5);
+  color: rgba(255, 255, 255, 0.5);
   font-size: 22px;
   opacity: 1;
 }
 .verification-banner .btn.close:hover {
-  color: rgba(55, 55, 55, 0.8);
+  color: rgba(255, 255, 255, 0.8);
 }
 .verification-banner .fas,
 .verification-banner .fal,
 .verification-banner .far {
-  color: #666;
+  color: #8892a4;
   float: left;
   padding: 2px 10px 0 0;
   font-size: 24px;
@@ -11764,7 +11764,7 @@ div.md-editor.active {
   padding-top: 5px;
   font-size: 1.2em;
   font-weight: 300;
-  color: #888;
+  color: #8892a4;
 }
 
 .store-order-container .domain-validation.ok {
@@ -12041,15 +12041,15 @@ div.md-editor.active {
 }
 
 .promo-banner.ox {
-  border-top: 3px solid #666;
+  border-top: 3px solid #8892a4;
 }
 
 .promo-banner.ox a {
-  color: #666;
+  color: #8892a4;
 }
 
 .promo-banner.ox .btn {
-  background-color: #666;
+  background-color: #8892a4;
 }
 
 .promo-banner.sitebuilder {
@@ -12148,7 +12148,7 @@ div.md-editor.active {
 }
 .client-home-cards div[menuitemname=ThreesixtymonitoringLogin] .threesixtymonitoring-title {
   font-weight: bold;
-  color: #888;
+  color: #8892a4;
   text-transform: uppercase;
   font-size: 12px;
 }
@@ -12509,7 +12509,7 @@ div.tweet span {
 .ticket-reply .rating-done span.star:before {
   content: "\f005";
   padding-right: 0;
-  color: #999;
+  color: #8892a4;
 }
 
 .ticket-reply .rating span.star:hover:before,
