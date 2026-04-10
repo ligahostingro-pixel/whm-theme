@@ -32,7 +32,7 @@ section#main-body {
 .landing-page .hero {
     padding: 60px 0;
     text-align: center;
-    color: #333;
+    color: #e2e8f0;
 }
 .landing-page .hero h2 {
     margin: 0 0 15px 0;
@@ -83,8 +83,9 @@ section#main-body {
 .landing-page .product-options .item {
     margin: 0 0 20px 0;
     padding: 30px;
-    background-color: #fff;
+    background-color: #0d1730;
     border-radius: var(--rounding-sm);
+    border: 1px solid #1a2744;
 }
 .landing-page .product-options h4 {
     margin: 0;
@@ -94,7 +95,7 @@ section#main-body {
 .landing-page .product-options .icon {
     line-height: 80px;
     font-size: 50px;
-    color: #ccc;
+    color: #1e3a5f;
 }
 .landing-page .product-options img {
     margin: 20px 0;
@@ -106,21 +107,21 @@ section#main-body {
 }
 .landing-page .product-options p {
     margin: 10px 0;
-    color: #555;
+    color: #a0aec0;
 }
 .landing-page .product-options .price {
     margin: 10px 0;
     font-size: 1.1em;
-    color: #444;
+    color: #cbd5e1;
 }
 .landing-page .product-options .item .btn {
     padding: 6px 20px;
-    background-color: #989898;
-    color: #eee;
+    background-color: #1e3a5f;
+    color: #e2e8f0;
 }
 
 .landing-page.mail-services .product-options .item {
-    background-color: #f0fcff;
+    background-color: #0a1e3a;
 }
 .landing-page.mail-services .product-options .icon {
     color: #00acd4;
@@ -154,7 +155,7 @@ section#main-body {
 .landing-page .navbar .navbar-nav > li > a {
     font-size: 14px;
     text-align: center;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #1a2744;
 }
 
 .landing-page .navbar .navbar-collapse {
@@ -171,10 +172,10 @@ section#main-body {
         width: 25%;
     }
     .landing-page .navbar.navbar-expand-md .navbar-nav > li > a {
-        border-left: 1px solid #ccc;
+        border-left: 1px solid #1a2744;
     }
     .landing-page .navbar.navbar-expand-md .navbar-nav > li:last-child > a {
-        border-right: 1px solid #ccc;
+        border-right: 1px solid #1a2744;
     }
 
     .landing-page .navbar .navbar-nav {
@@ -186,17 +187,17 @@ section#main-body {
     }
 
     .landing-page .navbar.navbar-expand .navbar-nav > li > a {
-        border-left: 1px solid #ccc;
+        border-left: 1px solid #1a2744;
     }
 
     .landing-page .navbar.navbar-expand .navbar-nav > li:last-child > a {
-        border-right: 1px solid #ccc;
+        border-right: 1px solid #1a2744;
     }
 }
 
 
 .landing-page .navbar .navbar-nav > li.active > a {
-    background: #fff;
+    background: #111d3a;
 }
 
 .landing-page .content-block {
@@ -215,8 +216,8 @@ section#main-body {
 }
 
 .landing-page .light-grey-bg {
-    background-color: #f6f6f6;
-    color: #222;
+    background-color: #0a1128;
+    color: #e2e8f0;
 }
 .landing-page .get-started {
     background-color: #00acd4;
@@ -264,24 +265,24 @@ section#main-body {
 }
 .landing-page .nav-tabs > li > a,
 .landing-page .nav-tabs > li > a:focus {
-    background-color: #efefef;
+    background-color: #111d3a;
     border: 0;
 }
 .landing-page .nav-tabs > li > a:hover {
-    background-color: #f2f2f2;
+    background-color: #1a2744;
     border: 0;
 }
 .landing-page .nav-tabs > li.active > a,
 .landing-page .nav-tabs > li.active > a:focus,
 .landing-page .nav-tabs > li.active > a:hover {
-    background-color: #fff;
+    background-color: #0d1730;
     border: 0;
     border-top: 3px solid #2cc9f2;
 }
 
 .landing-page .tab-content {
     padding: 30px;
-    background-color: #fff;
+    background-color: #0d1730;
 }
 .landing-page .tab-content h1,
 .landing-page .tab-content h2,
@@ -323,7 +324,7 @@ section#main-body {
 
 .landing-page .pricing-item {
     margin: 0 0 10px 0;
-    border: 1px solid #ddd;
+    border: 1px solid #1a2744;
     text-align: center;
 }
 .landing-page .pricing-item .header {
@@ -345,11 +346,11 @@ section#main-body {
 .landing-page .pricing-item ul li {
     line-height: 28px;
     font-size: 0.92em;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #1a2744;
 }
 .landing-page .pricing-item .feature-heading {
     margin: 10px 0 0 0;
-    background-color: #f4f4f4;
+    background-color: #111d3a;
     line-height: 30px;
     font-weight: bold;
     font-size: 0.92em;
@@ -358,8 +359,8 @@ section#main-body {
 .landing-page.weebly .weebly-lite-plan {
     margin: 0 0 30px 0;
     padding: 20px;
-    background-color: #dceefd;
-    border: 1px solid #a7cdec;
+    background-color: #0a1e3a;
+    border: 1px solid #1a2744;
 }
 
 @media (min-width: 768px) {
@@ -388,7 +389,7 @@ section#main-body {
 
 .landing-page .features {
     padding: 90px 0 50px;
-    background-color: #f6f6f6;
+    background-color: #0a1128;
     text-align: center;
 }
 .landing-page .features .feature {
@@ -402,7 +403,7 @@ section#main-body {
 
 .landing-page.weebly .faq {
     padding: 80px 0;
-    background-color: #d5dde4;
+    background-color: #0a1128;
 }
 .landing-page .faq h3 {
     margin: 0 0 30px 0;
@@ -413,7 +414,7 @@ section#main-body {
     padding: 10px 0;
 }
 .landing-page .trusted-by {
-    color: #ccc;
+    color: #1e3a5f;
     font-size: 1.3em;
     line-height: 60px;
 }
@@ -469,9 +470,10 @@ section#main-body {
     height: 100% !important;
     margin: 20px 0 20px 0;
     padding: 30px 30px;
-    color: #432448;
-    background-color: #fff;
+    color: #e2e8f0;
+    background-color: #0d1730;
     border-radius: var(--rounding-sm);
+    border: 1px solid #1a2744;
 }
 .landing-page.ssl .validation-levels .item h4 {
     font-size: 1.4em;
@@ -588,7 +590,7 @@ section#main-body {
 .landing-page.ssl .help-me-choose .ideal {
     font-style: italic;
     text-align: center;
-    color: #888;
+    color: #8892a4;
 }
 .landing-page.ssl .help-me-choose .ssl-types-expl {
     margin: 0 0 20px 0;
@@ -605,7 +607,7 @@ section#main-body {
 .landing-page.ssl .ideal-for i {
     padding: 15px 0;
     font-size: 3em;
-    color: #ccc;
+    color: #1e3a5f;
 }
 .landing-page.ssl .ideal-for.dv i {
     color: #2369a5;
@@ -624,7 +626,7 @@ section#main-body {
 .landing-page.ssl .ssl-benefits .row {
     margin-top: 40px;
     text-align: center;
-    color: #444;
+    color: #a0aec0;
 }
 .landing-page.ssl .ssl-benefits i {
     display: block;
@@ -645,9 +647,9 @@ section#main-body {
     margin: 0 auto;
     padding: 40px;
     max-width: 660px;
-    background-color: #fff;
+    background-color: #0d1730;
     border-top: 4px solid #cc0000;
-    box-shadow: 2px 2px 5px #ccc;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
     font-size: 1.4em;
     text-align: center;
 }
@@ -726,7 +728,7 @@ section#main-body {
 
 .landing-page.ssl .detailed-info {
     padding: 80px 0;
-    background-color: #f8f8f8;
+    background-color: #0a1128;
 }
 .landing-page.ssl .detailed-info .panel-group {
     margin: 0;
@@ -754,8 +756,8 @@ section#main-body {
 .landing-page.ssl .detailed-info .card-body {
     margin-top: 0;
     padding: 35px;
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: #0d1730;
+    border: 1px solid #1a2744;
     box-shadow: none;
 }
 .landing-page.ssl .detailed-info div#collapseAllCerts .card-body {
@@ -791,7 +793,7 @@ section#main-body {
 }
 
 .landing-page.ssl .standout-2 {
-    color: #444;
+    color: #a0aec0;
     font-size: 1.5em;
     text-align: center;
 }
@@ -810,7 +812,7 @@ section#main-body {
     margin-top: 1em;
 }
 .landing-page.ssl ul.ssl-certs-all li.featured {
-    background: #fff7cc;
+    background: rgba(255, 193, 7, 0.15);
     border-radius: 0.25rem;
 }
 .landing-page.ssl ul.ssl-certs-all li:last-child {
@@ -837,7 +839,7 @@ section#main-body {
 }
 .landing-page.ssl ul.ssl-certs-all .price span {
     font-size: 0.9em;
-    color: #888;
+    color: #8892a4;
 }
 
 .landing-page.ssl .features {
@@ -1018,10 +1020,10 @@ section#main-body {
 .landing-page.ssl .row-pricing-table ul li {
     line-height: 40px;
     text-align: right;
-    background-color: #fff;
+    background-color: #0d1730;
     text-align: center;
-    border-bottom: 1px solid #ddd;
-    color: #666;
+    border-bottom: 1px solid #1a2744;
+    color: #a0aec0;
 }
 .landing-page.ssl .row-pricing-table ul li:first-child {
     border-radius: 4px 4px 0 0;
@@ -1051,8 +1053,8 @@ section#main-body {
 }
 
 .landing-page.ssl .certificate-options .btn {
-    background-color: #fff;
-    color: #444;
+    background-color: #111d3a;
+    color: #a0aec0;
 }
 
 .landing-page.ssl .certificate-options .preview-text {
@@ -1062,14 +1064,14 @@ section#main-body {
 
 .landing-page.ssl .dashed-border {
     padding-bottom: 70px;
-    border-bottom: 1px dashed #ddd;
+    border-bottom: 1px dashed #1a2744;
 }
 
 .sitebuilder-upgrade-container,
 .weebly-upgrade-container {
     margin: 30px 0 50px;
     padding: 0;
-    border: 1px solid #ddd;
+    border: 1px solid #1a2744;
 }
 .sitebuilder-upgrade-container .content-padded,
 .weebly-upgrade-container .content-padded {
@@ -1085,7 +1087,7 @@ section#main-body {
 .weebly-upgrade-container .promo-wrapper {
     margin: 0;
     padding: 30px;
-    background-color: #f6f6f6;
+    background-color: #0a1128;
     min-height: 400px;
 }
 .sitebuilder-upgrade-container .promo-wrapper .logincontainer,
@@ -1160,7 +1162,7 @@ section#main-body {
 .landing-page.sitelock .plans .plan {
     margin: 20px 0;
     padding: 0;
-    background-color: #fff;
+    background-color: #0d1730;
 }
 .landing-page.sitelock .plans .plan .header {
     margin: 0;
@@ -1185,15 +1187,15 @@ section#main-body {
     line-height: 25px;
     font-size: 0.9em;
     text-align: right;
-    color: #aaa;
-    border-bottom: 1px solid #eee;
+    color: #8892a4;
+    border-bottom: 1px solid #1a2744;
 }
 .landing-page.sitelock .plans .plan ul li:last-child {
     border: 0;
 }
 .landing-page.sitelock .plans .plan ul li span {
     float: left;
-    color: #444;
+    color: #cbd5e1;
 }
 .landing-page.sitelock .plans .fas,
 .landing-page.sitelock .plans .far {
@@ -1289,7 +1291,7 @@ section#main-body {
 }
 .landing-page.codeguard .overview-features span {
     font-size: medium;
-    color: #888;
+    color: #8892a4;
 }
 
 @media (min-width: 768px) {
@@ -1298,7 +1300,7 @@ section#main-body {
         margin: 0;
         width: 20%;
         text-align: center;
-        border-right: 1px solid #ddd;
+        border-right: 1px solid #1a2744;
     }
     .landing-page.codeguard .overview-features li:last-child {
         border-right: 0;
@@ -1312,7 +1314,7 @@ section#main-body {
         display: block;
         padding: 0 30px 20px;
         font-size: medium;
-        color: #888;
+        color: #8892a4;
     }
 }
 
@@ -1322,7 +1324,7 @@ section#main-body {
 
 .landing-page.codeguard .faqs {
     padding: 90px 0 50px;
-    background-color: #f6f6f6;
+    background-color: #0a1128;
     text-align: center;
 }
 .landing-page.codeguard .faqs h3 {
@@ -1386,7 +1388,7 @@ section#main-body {
     box-shadow: none;
 }
 .landing-page.codeguard .irs-line {
-    background: #fff;
+    background: #1a2744;
     border: 0;
     height: 16px;
     top: 0;
@@ -1521,7 +1523,7 @@ section#main-body {
 
 .landing-page.sitelockvpn ul.highlights li::before {
   content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: #ccc; /* Change the color */
+  color: #1e3a5f; /* Change the color */
   font-size: 1.3em;
   font-weight: bold; /* If you want it to be bold */
   display: inline-block; /* Needed to add space between the bullet and the text */
@@ -1530,7 +1532,7 @@ section#main-body {
 }
 
 .landing-page.sitelockvpn .feature.alternate-bg {
-    background-color: #f4f8fb;
+    background-color: #0a1128;
 }
 
 .landing-page.sitelockvpn .feature.devices {
@@ -1563,13 +1565,13 @@ section#main-body {
 .landing-page.sitelockvpn .feature.pricing .pricing-box {
     margin: 30px 0;
     padding: 0;
-    background-color: #fff;
+    background-color: #0d1730;
 }
 
 .landing-page.sitelockvpn .feature.pricing .cycle {
     padding: 10px;
-    background-color: #dfeaf3;
-    color: #333;
+    background-color: #1a2744;
+    color: #e2e8f0;
     text-align: center;
     font-weight: bold;
 }
@@ -1589,7 +1591,7 @@ section#main-body {
 .landing-page.sitelockvpn .feature.pricing ul li {
     padding: 5px;
     text-align: center;
-    border-bottom: 1px solid #dce7f1;
+    border-bottom: 1px solid #1a2744;
     font-size: 0.8em;
 }
 .landing-page.sitelockvpn .feature.pricing ul li:last-child {
@@ -1617,7 +1619,7 @@ section#main-body {
 .landing-page.sitelockvpn .dividing-line {
     margin: 30px auto;
     padding: 0;
-    background-color: #dce7f1;
+    background-color: #1a2744;
     height: 3px;
     width: 200px;
 }
@@ -1650,7 +1652,7 @@ section#main-body {
 }
 
 .landing-page.sitelockvpn .feature.countries {
-    background-color: #f8f8f8;
+    background-color: #0a1128;
 }
 .landing-page.sitelockvpn .feature.countries img {
     margin: 0;
@@ -1699,7 +1701,7 @@ section#main-body {
 .landing-page.marketgoo .feature-wrapper {
     margin: 0;
     padding: 20px;
-    background-color: #f0f2f4;
+    background-color: #111d3a;
     border-radius: 15px;
 }
 .landing-page.marketgoo .plan {
@@ -1772,7 +1774,7 @@ section#main-body {
     font-weight: bold;
 }
 .landing-page.marketgoo .plan.marketgoo_pro ul {
-    background-color: #eee;
+    background-color: #111d3a;
 }
 .landing-page.marketgoo .plan .btn-signup {
     padding: 8px 20px;
@@ -1785,7 +1787,7 @@ section#main-body {
   bottom:-50px;
 }
 .landing-page.marketgoo .carousel .carousel-indicators li {
-  background-color:#ddd;
+  background-color:#1a2744;
 }
 .landing-page.marketgoo .carousel .carousel-inner {
    margin-bottom:50px;
@@ -1820,7 +1822,7 @@ section#main-body {
     font-style: normal;
 }
 .landing-page.marketgoo .faqs {
-    background-color: #f0f2f4;
+    background-color: #111d3a;
 }
 .landing-page.marketgoo .embed-responsive {
     padding-bottom: 45%;
@@ -1910,13 +1912,13 @@ section#main-body {
 }
 .landing-page.ox .stand-out {
     padding: 50px 0;
-    background-color: #e5e5e5;
-    color: #043856;
+    background-color: #111d3a;
+    color: #e2e8f0;
 }
 .landing-page.ox .stand-out h2 {
     margin: 0 0 10px 0;
     font-size: 26px;
-    color: #043856;
+    color: #e2e8f0;
 }
 .landing-page.ox .features {
     margin: 75px 0;
@@ -1954,7 +1956,7 @@ section#main-body {
 }
 .landing-page.ox .pricing table {
     width: 100%;
-    color: #043855;
+    color: #cbd5e1;
     font-size: 0.92em;
 }
 .landing-page.ox .pricing td:not(.no-border),
@@ -1962,7 +1964,7 @@ section#main-body {
     padding: 7px 8px;
     width: 33.33%;
     text-align: center;
-    border: 1px solid #e1eaf3;
+    border: 1px solid #1a2744;
 }
 .landing-page.ox .pricing th {
     padding: 12px 8px;
@@ -1977,7 +1979,7 @@ section#main-body {
     text-align: left;
 }
 .landing-page.ox .pricing table tr:nth-child(even) td:first-child {
-    background-color: #f3f7fa;
+    background-color: #111d3a;
 }
 .landing-page.ox .pricing td.no-bg {
     background-color: transparent !important;
@@ -1992,7 +1994,7 @@ section#main-body {
 }
 .landing-page.ox .faqs {
     padding: 40px 0 70px;
-    background-color: #f3f7fa;
+    background-color: #0a1128;
 }
 .landing-page.ox .faqs .question {
     margin: 30px 0 10px;
@@ -2020,7 +2022,7 @@ section#main-body {
 }
 
 .landing-page.sitebuilder {
-    background-color: #fff;
+    background-color: #060b18;
 }
 .landing-page.sitebuilder .logo-container {
     padding: 60px;
@@ -2050,7 +2052,7 @@ section#main-body {
 }
 .landing-page.sitebuilder .intro {
     padding: 60px 0;
-    background-color: #f8f9f9;
+    background-color: #0a1128;
 }
 @media (min-width: 1200px) {
     .landing-page.sitebuilder .intro .vertical-spacer {
@@ -2104,9 +2106,9 @@ section#main-body {
 .landing-page.sitebuilder .nav-tabs > li > a {
     padding: 10px 30px;
     text-transform: uppercase;
-    background: #f6f6f6;
+    background: #111d3a;
     border: 0;
-    color: #333;
+    color: #e2e8f0;
     font-weight: bold;
     font-size: 1.1em;
     border-radius: 10px;
@@ -2116,7 +2118,7 @@ section#main-body {
 .landing-page.sitebuilder .nav-tabs a.active:hover {
     border: 0;
     color: #ff3377;
-    background: #ddd;
+    background: #1a2744;
 }
 .landing-page.sitebuilder .carousel-indicators li {
     background-color: #aaa;
@@ -2136,7 +2138,7 @@ section#main-body {
     padding-bottom: 10px;
 }
 .landing-page.sitebuilder .features p {
-    color: #666;
+    color: #8892a4;
 }
 .landing-page.sitebuilder .btn-primary {
     padding: 2px 15px;
@@ -2149,7 +2151,7 @@ section#main-body {
 }
 .landing-page.sitebuilder .templates {
     padding: 60px 0;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #1a2744;
 }
 .landing-page.sitebuilder .templates .previews {
     padding: 50px 0;
@@ -2160,7 +2162,7 @@ section#main-body {
     height: 200px;
     object-fit: cover;
     object-position: top;
-    border: 1px solid #ddd;
+    border: 1px solid #1a2744;
 }
 @media (max-width: 767px) {
     .landing-page.sitebuilder .templates .previews img,
@@ -2177,7 +2179,7 @@ section#main-body {
     display: inline-block;
     width: 100px;
     line-height: 100px;
-    background-color: #ccc;
+    background-color: #1a2744;
     color: #fff;
     border-radius: 50%;
 }
@@ -2207,11 +2209,11 @@ section#main-body {
 .landing-page.sitebuilder .templates .previews .tplname {
     display: block;
     padding: 10px 0 20px;
-    color: #777;
+    color: #8892a4;
     text-align: center;
 }
 .landing-page.sitebuilder .templates .previews a:hover .tplname {
-    color: #444;
+    color: #cbd5e1;
 }
 .landing-page.sitebuilder .pricing {
     padding: 70px 0;
@@ -2229,10 +2231,10 @@ section#main-body {
 .landing-page.sitebuilder .pricing-table {
     margin: 60px 0 0;
     padding: 0;
-    background-color: #fff;
+    background-color: #0d1730;
     font-weight: bold;
     font-size: 0.92em;
-    border: 1px solid #eee;
+    border: 1px solid #1a2744;
     border-radius: 6px;
     overflow: auto;
 }
@@ -2247,7 +2249,7 @@ section#main-body {
     min-width: 880px;
 }
 .landing-page.sitebuilder .pricing-table-row:not(.col-heading):nth-child(even) {
-    background-color: #f6f6f6;
+    background-color: #111d3a;
 }
 .landing-page.sitebuilder .pricing-table-row::after {
     content: "";
@@ -2294,7 +2296,7 @@ section#main-body {
     text-align: center;
 }
 .landing-page.sitebuilder .pricing-table i {
-    color: #bbb;
+    color: #1e3a5f;
 }
 .landing-page.sitebuilder .faq {
     padding: 80px 0;
@@ -2318,7 +2320,7 @@ section#main-body {
 }
 
 .wp-toolkit {
-    background-color: #fff;
+    background-color: #060b18;
 }
 .wp-toolkit .hero-cta {
     padding: 30px 0;
@@ -2348,7 +2350,7 @@ section#main-body {
 }
 .wp-toolkit .hero-image {
     margin-top: 100px;
-    background-color: #dbe7f1;
+    background-color: #111d3a;
     text-align: center;
 }
 .wp-toolkit .hero-image img {
@@ -2359,7 +2361,7 @@ section#main-body {
 .wp-toolkit .body-intro {
     margin: 0;
     padding: 0 0 35px;
-    background-color: #dbe7f1;
+    background-color: #111d3a;
 }
 @media (min-width: 992px) {
     .wp-toolkit .body-intro {
@@ -2395,7 +2397,7 @@ section#main-body {
 .wp-toolkit .feature-block .title {
     padding: 30px 0;
     font-size: 1.3em;
-    color: #043855;
+    color: #cbd5e1;
 }
 .wp-toolkit .pre-screenshots {
     margin: 0;
@@ -2460,7 +2462,7 @@ section#main-body {
     margin-bottom: 40px;
     font-size: 1.6em;
     font-weight: bold;
-    color: #043855;
+    color: #e2e8f0;
 }
 .wp-toolkit .pricing .subtitle {
     margin-bottom: 20px;
@@ -2474,7 +2476,7 @@ section#main-body {
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 25px;
-    border-bottom: 1px solid #dce8f2;
+    border-bottom: 1px solid #1a2744;
 }
 .wp-toolkit .cart {
     display: none;
@@ -2482,7 +2484,7 @@ section#main-body {
     text-align: left;
 }
 .wp-toolkit .cart-items {
-    border-bottom: 1px solid #dce8f2;
+    border-bottom: 1px solid #1a2744;
 }
 .wp-toolkit .cart-items .item {
     padding: 10px 30px;
@@ -2493,7 +2495,7 @@ section#main-body {
     display: table;
 }
 .wp-toolkit .cart-items .item:nth-child(odd) {
-    background-color: #f3f7fa;
+    background-color: #0a1128;
 }
 .wp-toolkit .cart-items .item.template {
     display: none;
@@ -2510,7 +2512,7 @@ section#main-body {
 .wp-toolkit .cart-totals {
     padding: 30px;
     font-size: 1.15em;
-    color: #043855;
+    color: #e2e8f0;
 }
 .wp-toolkit .cart-totals .cart-total-amount {
     font-weight: bold;
@@ -2541,9 +2543,9 @@ section#main-body {
     height: 40px;
 }
 .wp-toolkit .service-selector .service .btn.disabled {
-    background-color: #e7e7e7;
-    border-color: #e7e7e7;
-    color: #999;
+    background-color: #1a2744;
+    border-color: #1a2744;
+    color: #8892a4;
 }
 .wp-toolkit .service-selector .service.in-cart .btn {
     display: none;
@@ -2558,7 +2560,7 @@ section#main-body {
 }
 .wp-toolkit .service-selector .divider {
     margin: 0 auto;
-    background-color: #d5d5d5;
+    background-color: #1a2744;
     height: 1px;
     width: 100px;
 }
@@ -2566,7 +2568,7 @@ section#main-body {
     padding: 15px;
     font-size: 1.1em;
     font-weight: bold;
-    color: #043855;
+    color: #e2e8f0;
 }
 .wp-toolkit .service-selector .description {
     max-height: 48px;
@@ -2574,7 +2576,7 @@ section#main-body {
 }
 .wp-toolkit .service-selector .price {
     font-weight: bold;
-    color: #043855;
+    color: #e2e8f0;
 }
 .wp-toolkit .faqs {
     margin: 0;
@@ -2584,13 +2586,13 @@ section#main-body {
     margin-top: 30px;
     width: 115px;
     height: 3px;
-    background-color: #dce8f2;
+    background-color: #1a2744;
 }
 .wp-toolkit .faqs .faq-title {
     padding: 20px 0;
     font-size: 1.1em;
     font-weight: bold;
-    color: #043855;
+    color: #e2e8f0;
 }
 .wp-toolkit .addon-na {
     padding-top: 5px;
@@ -2689,8 +2691,8 @@ section#main-body {
 }
 .landing-page.xovinow .btn-xovinow {
     color: #10069F;
-    background-color: #fff;
-    border-color: #fff;
+    background-color: #e2e8f0;
+    border-color: #e2e8f0;
 }
 .landing-page.xovinow .carousel-container {
     margin: 0 20px;
@@ -2699,7 +2701,7 @@ section#main-body {
 }
 .landing-page.xovinow .feature-carousel .carousel-inner {
     border-radius: 6px;
-    box-shadow: 0px 0px 20px #ccc;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
 }
 .landing-page.xovinow .feature-carousel img {
     max-width: 100%;
@@ -2765,8 +2767,8 @@ section#main-body {
     margin: 4px;
     padding: 10px;
     display: block;
-    background-color: #eef4f8;
-    color: #555;
+    background-color: #111d3a;
+    color: #a0aec0;
     border-radius: 4px;
     border: 0;
     width: 100%;
@@ -2793,7 +2795,7 @@ section#main-body {
 .landing-page.xovinow .pricing .money-back {
     font-size: 1.6em;
     line-height: 1.2em;
-    color: #043855;
+    color: #e2e8f0;
 }
 .landing-page.xovinow .pricing .money-back span {
     font-weight: bold;
@@ -2801,7 +2803,7 @@ section#main-body {
 }
 .landing-page.xovinow .pricing .plan-features {
     font-weight: bold;
-    color: #043855;
+    color: #cbd5e1;
 }
 .landing-page.xovinow .pricing .plan {
     margin: 0 0 50px 0;
@@ -2819,7 +2821,7 @@ section#main-body {
     padding: 5px;
     font-size: 1.1em;
     font-weight: bold;
-    color: #043855;
+    color: #e2e8f0;
     border-bottom: 4px solid #737373;
     white-space: nowrap;
     overflow: hidden;
@@ -2833,8 +2835,8 @@ section#main-body {
     padding: 5px;
     font-size: 0.95em;
     font-weight: bold;
-    color: #043855;
-    border-bottom: 2px solid #f4f5f7;
+    color: #e2e8f0;
+    border-bottom: 2px solid #1a2744;
 }
 .landing-page.xovinow .pricing .plan-feature {
     padding: 6px 20px;
@@ -2843,7 +2845,7 @@ section#main-body {
     text-overflow: ellipsis;
 }
 .landing-page.xovinow .pricing .plan-feature.row-highlight {
-    background-color: #f8f9fa;
+    background-color: #0a1128;
 }
 .landing-page.xovinow .pricing .plan-feature i {
     color: #10069F;
@@ -2878,8 +2880,8 @@ section#main-body {
     margin: 0 auto 20px;
 }
 .landing-page.nordvpn {
-    background-color: white;
-    color: black;
+    background-color: #060b18;
+    color: #e2e8f0;
     font-family: sans-serif;
 }
 .landing-page.nordvpn p {
@@ -2895,7 +2897,7 @@ section#main-body {
     font-weight: bold;
 }
 .landing-page.nordvpn .hero {
-    color: black;
+    color: #e2e8f0;
 }
 .landing-page.nordvpn strong {
     font-weight: bold;
@@ -2904,7 +2906,7 @@ section#main-body {
     color:#4580ff;
 }
 .landing-page.nordvpn .line-break {
-    border-bottom: 1px #dce8f2 solid;
+    border-bottom: 1px #1a2744 solid;
     padding-top: 20px;
 }
 .landing-page.nordvpn .btn-get-nord,
@@ -2952,7 +2954,7 @@ section#main-body {
 .landing-page.nordvpn .hero .available .divider .line {
     flex-grow: 1;
     height: 2px;
-    background: #e1e1e1;
+    background: #1a2744;
 }
 .landing-page.nordvpn .hero .available .divider p {
     font-size: .9rem;
@@ -3046,7 +3048,7 @@ section#main-body {
 }
 
 .landing-page.nordvpn .feature.logo {
-    background:#f2f2f2;
+    background:#111d3a;
 }
 .landing-page.nordvpn .feature.logo img {
     margin: 0.75rem 0;
@@ -3065,7 +3067,7 @@ section#main-body {
     align-items: center;
 }
 .keep-data-safe-card {
-    border: 2px solid #f4f4f4;
+    border: 2px solid #1a2744;
     border-radius: 12px;
     padding: 1rem;
     flex: 0 0 calc((100% - 3rem) / 3);
@@ -3099,7 +3101,7 @@ section#main-body {
     align-items: center;
 }
 .landing-page.nordvpn .feature.threat .threats-div .col-10 {
-    border: 2px solid #f4f4f4;
+    border: 2px solid #1a2744;
     border-radius: 12px;
     padding: 1rem;
     flex: 0 0 calc((100% - 3rem) / 3);
@@ -3158,7 +3160,7 @@ section#main-body {
     border-bottom: none;
 }
 .landing-page.nordvpn .comparison .col-12:nth-child(odd):not(:first-child):not(:last-child) {
-    background-color: #f1f2f3;
+    background-color: #0a1128;
     border-radius: 12px;
 }
 .landing-page.nordvpn .comparison .col-12:first-of-type .col-2 {
@@ -3179,7 +3181,7 @@ section#main-body {
 .landing-page.nordvpn .comparison .col-12 .col-2:nth-of-type(2) {
     border-left: 1px solid #4e86ff;
     border-right: 1px solid #4e86ff;
-    background: #ecf3ff;
+    background: rgba(78, 134, 255, 0.15);
 }
 .landing-page.nordvpn .comparison .col-12:first-of-type .col-2:nth-of-type(2) {
     border-top: 1px solid #4e86ff;
@@ -3317,14 +3319,14 @@ section#main-body {
 .landing-page.threesixtymonitoring {
     font-family: "Open Sans", sans-serif;
     font-size: 0.875rem;
-    color: #42535e;
+    color: #a0aec0;
 }
 .landing-page.threesixtymonitoring h1,
 .landing-page.threesixtymonitoring h2,
 .landing-page.threesixtymonitoring h3,
 .landing-page.threesixtymonitoring .row-revenue {
     font-weight: 600 !important;
-    color: #222;
+    color: #e2e8f0;
 }
 .landing-page.threesixtymonitoring h1 {
     font-size: 2.5rem;
@@ -3402,11 +3404,11 @@ section#main-body {
     width: 100%;
 }
 .landing-page.threesixtymonitoring .section-header {
-    color: #222;
+    color: #e2e8f0;
 }
 .landing-page.threesixtymonitoring .section-header .form-control {
     font-weight: 600;
-    color: #222;
+    color: #e2e8f0;
 }
 .landing-page.threesixtymonitoring .img-logo,
 .landing-page.threesixtymonitoring .img-full,
@@ -3476,12 +3478,12 @@ section#main-body {
     width: 100%;
 }
 .landing-page.threesixtymonitoring .nav-link {
-    color: #42535e;
+    color: #a0aec0;
     font-weight: 600;
     height: 100%;
 }
 .landing-page.threesixtymonitoring .nav-primary .nav-link {
-    background-color: #f1f7ff;
+    background-color: #111d3a;
     border-radius: 0 0 0.25rem 0.25rem;
     padding: 1.875rem;
     font-size: 1.25rem;
@@ -3492,12 +3494,12 @@ section#main-body {
     color: #fff;
 }
 .landing-page.threesixtymonitoring .nav-secondary .nav-link {
-    background-color: #d9e8ff;
+    background-color: #1a2744;
     border-radius: 0.25rem 0.25rem 0 0;
     padding: 1.875rem;
 }
 .landing-page.threesixtymonitoring .nav-secondary .nav-link.active {
-    background-color: #fff;
+    background-color: #0d1730;
     border-radius: 0;
     border-top: solid #9b65db 3px;
 }
@@ -3508,7 +3510,7 @@ section#main-body {
     margin-top: -7rem;
 }
 .landing-page.threesixtymonitoring .section-features {
-    background: linear-gradient(#dce9ff, #ffffff);
+    background: linear-gradient(#0a1128, #060b18);
 }
 .landing-page.threesixtymonitoring .row-features {
     font-weight: 600;
@@ -3636,13 +3638,13 @@ section#main-body {
     float: left;
 }
 .landing-page.threesixtymonitoring .div-pricing-container .div-feature-labels ul li:nth-child(2n+2) {
-    background-color: #f1f5f9;
+    background-color: #0a1128;
 }
 .landing-page.threesixtymonitoring .div-pricing-container .div-feature-values li {
     text-transform: lowercase;
 }
 .landing-page.threesixtymonitoring .div-pricing-container .div-feature-values ul li:nth-child(2n+2) {
-    background-color: #f8fafc;
+    background-color: #0a1128;
 }
 .landing-page.threesixtymonitoring .div-feature-price {
     background-color: #b8d2ff;
@@ -3666,7 +3668,7 @@ section#main-body {
     -webkit-filter: blur(3px);
 }
 .landing-page.threesixtymonitoring .section-faq .btn-link {
-    color: #42535e;
+    color: #a0aec0;
     font-weight: 600;
     text-transform: uppercase;
     text-align: left;
@@ -3677,8 +3679,8 @@ section#main-body {
     margin: 0;
 }
 .landing-page.threesixtymonitoring .section-faq .card-header {
-    background-color: #fff;
-    border-bottom: solid #f6f9ff 3px;
+    background-color: #0d1730;
+    border-bottom: solid #1a2744 3px;
     border-radius: 0;
     display: flex;
     justify-content: space-between;

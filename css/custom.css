@@ -378,3 +378,54 @@ body.homepage-page .master-breadcrumb { display: none; }
     color: #8892a4; margin-right: 6px; transition: all 0.2s;
 }
 .liga-social a:hover { border-color: var(--liga-purple); color: #a78bfa; }
+
+/* ══════════════════════════════════════════════════════
+   6. MOBILE RESPONSIVE
+   ══════════════════════════════════════════════════════ */
+
+/* Tablet (≤991px) — already handles hero h1 + float badges above */
+@media (max-width: 991px) {
+    .liga-features { padding: 40px 0; }
+    .liga-datacenters { padding: 40px 0; }
+    .liga-hero { padding: 40px 0 35px; }
+    .liga-terminal .terminal-body { font-size: 0.75rem; }
+}
+
+/* Small tablets / large phones (≤767px) */
+@media (max-width: 767px) {
+    .liga-hero h1 { font-size: 1.8rem; }
+    .liga-hero .hero-desc { font-size: 0.95rem; }
+    .liga-hero .hero-buttons { flex-direction: column; gap: 10px; }
+    .liga-hero .btn-hero-primary,
+    .liga-hero .btn-hero-secondary { width: 100%; justify-content: center; }
+    .liga-icon-strip { gap: 14px; padding: 16px 0; }
+    .liga-icon-strip .strip-item { font-size: 0.75rem; }
+    .liga-features .section-label h2,
+    .liga-datacenters h2 { font-size: 1.5rem; }
+    .liga-stats { gap: 18px; }
+    .liga-stats .stat-val { font-size: 1.1rem; }
+    .action-icon-btns a { font-size: 0.82rem; }
+    .action-icon-btns a .ico-container { font-size: 2em; }
+}
+
+/* Phones (≤575px) */
+@media (max-width: 575px) {
+    .liga-hero { padding: 30px 0 25px; }
+    .liga-hero h1 { font-size: 1.55rem; }
+    .liga-hero .hero-desc { font-size: 0.88rem; max-width: 100%; }
+    .liga-hero .hero-status { font-size: 0.78rem; padding: 5px 14px; }
+    .liga-icon-strip { gap: 10px; }
+    .liga-icon-strip .strip-item { font-size: 0.72rem; gap: 4px; }
+    .liga-features { padding: 30px 0; }
+    .liga-datacenters { padding: 30px 0; }
+    .liga-feature-card { padding: 18px; }
+    .liga-feature-card h4 { font-size: 0.92rem; }
+    .liga-feature-card p { font-size: 0.82rem; }
+    .liga-dc-card { padding: 16px; }
+    .liga-dc-card .dc-specs { grid-template-columns: 1fr; }
+    .liga-footer-grid { grid-template-columns: 1fr !important; gap: 24px; }
+    .liga-footer-grid h5 { margin-bottom: 10px; }
+    .liga-footer-bottom { flex-direction: column; align-items: center; gap: 12px; }
+    .liga-terminal .terminal-body { padding: 12px; font-size: 0.7rem; line-height: 1.6; }
+    .home-domain-search .input-group-wrapper { flex-direction: column; }
+}

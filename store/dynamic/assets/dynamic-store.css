@@ -1,15 +1,16 @@
 .dynamic-landing-page {
     /* CSS Custom Properties for theming */
     --radius: 12px;
-    --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    --shadow-medium: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    --shadow-large: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+    --shadow-medium: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+    --shadow-large: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --gradient: linear-gradient(135deg, var(--primary-color), var(--accent-color));
 
     color: var(--text-color);
     line-height: 1.6;
     overflow-x: hidden;
+    background-color: #060b18;
 }
 
 /* Reset and base styles */
@@ -24,7 +25,7 @@
 }
 
 .background-gradient {
-    background: linear-gradient(135deg, var(--bg-light) 0%, #ffffff 100%);
+    background: linear-gradient(135deg, var(--bg-light) 0%, #060b18 100%);
 }
 
 .background-light {
@@ -81,7 +82,7 @@
     align-items: center;
     margin-bottom: 16px;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(13, 23, 48, 0.95);
     border-radius: 20px;
     box-shadow: var(--shadow-medium);
     backdrop-filter: blur(10px);
@@ -251,7 +252,7 @@
     box-shadow: var(--shadow-soft);
     transition: var(--transition);
     text-align: center;
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    border: 1px solid #1a2744;
 }
 
 .features-content .feature:hover {
@@ -360,13 +361,13 @@
 }
 
 .pricing-card {
-    background: #ffffff;
+    background: #0d1730;
     border-radius: 20px;
     padding: 40px 32px;
     box-shadow: var(--shadow-soft);
     transition: var(--transition);
     position: relative;
-    border: 2px solid transparent;
+    border: 2px solid #1a2744;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -589,7 +590,7 @@
 }
 
 .faq-item {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #1a2744;
     margin-bottom: 0;
 }
 
@@ -733,7 +734,7 @@
 
 .table-wrapper {
     overflow-x: auto;
-    background: #ffffff;
+    background: #0d1730;
     border-radius: 16px;
     box-shadow: var(--shadow-soft);
     margin-bottom: 32px;
@@ -749,7 +750,7 @@
 .comparison-table td {
     padding: 24px 20px;
     text-align: center;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid #1a2744;
 }
 
 .feature-header {
@@ -773,7 +774,7 @@
 }
 
 .feature-row:hover {
-    background: rgba(0, 0, 0, 0.02);
+    background: rgba(255, 255, 255, 0.03);
 }
 
 .feature-name {
@@ -863,8 +864,8 @@
 }
 
 .buy-row {
-    background: #ffffff;
-    border-top: 2px solid var(--bg-light);
+    background: #0d1730;
+    border-top: 2px solid #1a2744;
 }
 
 .buy-row .table-cta-button {
