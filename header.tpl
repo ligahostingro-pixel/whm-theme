@@ -138,8 +138,6 @@
         </div>
     </header>
 
-    {include file="$template/includes/network-issues-notifications.tpl"}
-
     {if $templatefile != 'homepage'}
         <nav class="master-breadcrumb" aria-label="breadcrumb">
             <div class="container">

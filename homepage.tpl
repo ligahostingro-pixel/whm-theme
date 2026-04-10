@@ -216,19 +216,16 @@
     <div class="container">
         <h2 class="text-center mb-4">{lang key='howCanWeHelp'}</h2>
         <div class="row my-4 action-icon-btns">
-            <div class="col-6 col-md-4 col-lg">
+            <div class="col-6 col-md-3 col-lg">
                 <a href="{routePath('announcement-index')}"><figure class="ico-container"><i class="fal fa-bullhorn"></i></figure>{lang key='announcementstitle'}</a>
             </div>
-            <div class="col-6 col-md-4 col-lg">
-                <a href="serverstatus.php"><figure class="ico-container"><i class="fal fa-server"></i></figure>{lang key='networkstatustitle'}</a>
-            </div>
-            <div class="col-6 col-md-4 col-lg">
+            <div class="col-6 col-md-3 col-lg">
                 <a href="{routePath('knowledgebase-index')}"><figure class="ico-container"><i class="fal fa-book"></i></figure>{lang key='knowledgebasetitle'}</a>
             </div>
-            <div class="col-6 col-md-4 offset-md-2 offset-lg-0 col-lg">
+            <div class="col-6 col-md-3 col-lg">
                 <a href="{routePath('download-index')}"><figure class="ico-container"><i class="fal fa-download"></i></figure>{lang key='downloadstitle'}</a>
             </div>
-            <div class="col-6 offset-3 offset-md-0 col-md-4 col-lg">
+            <div class="col-6 col-md-3 col-lg">
                 <a href="submitticket.php"><figure class="ico-container"><i class="fal fa-life-ring"></i></figure>{lang key='homepage.submitTicket'}</a>
             </div>
         </div>

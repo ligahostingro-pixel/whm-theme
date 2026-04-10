@@ -41,7 +41,6 @@
                     <ul>
                         <li><a href="{routePath('announcement-index')}">{lang key='announcementstitle'}</a></li>
                         <li><a href="{routePath('knowledgebase-index')}">{lang key='knowledgebasetitle'}</a></li>
-                        <li><a href="serverstatus.php">{lang key='networkstatustitle'}</a></li>
                         <li><a href="{$WEB_ROOT}/contact.php">{lang key='contactus'}</a></li>
                     </ul>
                 </div>
