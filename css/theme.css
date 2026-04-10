@@ -2778,15 +2778,16 @@ fieldset:disabled a.btn {
 
 .btn-link {
   font-weight: 400;
-  color: #007bff;
+  color: #00d4aa;
   text-decoration: none;
 }
 .btn-link:hover {
-  color: #0056b3;
+  color: #33e0be;
   text-decoration: underline;
 }
 .btn-link:focus, .btn-link.focus {
   text-decoration: underline;
+  box-shadow: none;
 }
 .btn-link:disabled, .btn-link.disabled {
   color: #8892a4;
@@ -9300,10 +9301,14 @@ html, body {
 
 section#main-body {
   margin: 0;
-  padding: 20px 0;
+  padding: 0;
   background-color: transparent;
   /* screen - header height - breadcrumbs height - footer height */
   min-height: calc(100vh - 146px - 40px - 140px);
+}
+
+section#main-body > .container {
+  padding-top: 20px;
 }
 
 section#main-content {
@@ -9659,6 +9664,27 @@ span.caret {
 .card .bootstrap-switch, .mc-promo-manage .bootstrap-switch, .mc-promo-login .bootstrap-switch {
   word-wrap: initial;
 }
+.bootstrap-switch {
+  border-color: #1a2744;
+}
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-secondary,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-secondary {
+  color: #8892a4;
+  background-color: #111d3a;
+  border-color: #1a2744;
+}
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-secondary:hover,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-secondary:hover {
+  color: #e2e8f0;
+  background-color: #1a2744;
+  border-color: #1e3a5f;
+}
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-default,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-default {
+  color: #8892a4;
+  background-color: #111d3a;
+  border-color: #1a2744;
+}
 
 .line-height-reduced {
   line-height: 0.8;
@@ -9720,9 +9746,11 @@ body .primary-content .md-editor {
 }
 body .primary-content .md-editor .md-header {
   border-radius: var(--rounding-md) var(--rounding-md) 0 0;
+  background: #0d1730;
 }
 body .primary-content .md-editor .md-footer {
   border-radius: 0 0 var(--rounding-md) var(--rounding-md);
+  background: #0d1730;
 }
 
 body .custom-file-label {
@@ -10185,6 +10213,19 @@ h6:hover .show-on-hover {
 .intl-tel-input .country-list {
   border-radius: 8px;
   max-width: 400px;
+  background-color: #0d1730;
+  border: 1px solid #1a2744;
+  color: #e2e8f0;
+}
+.intl-tel-input .country-list .country:hover,
+.intl-tel-input .country-list .country.highlight {
+  background-color: #111d3a;
+}
+.intl-tel-input .country-list .country .dial-code {
+  color: #8892a4;
+}
+.intl-tel-input .country-list .divider {
+  border-bottom-color: #1a2744;
 }
 
 body .primary-content .card, body .primary-content .mc-promo-manage, body .primary-content .mc-promo-login {
@@ -10293,16 +10334,16 @@ fieldset[disabled] .btn-default.focus {
 }
 
 .btn-link {
-  color: var(--text);
+  color: #00d4aa;
 }
 
 .btn-link:hover {
-  color: var(--text-inverted);
+  color: #33e0be;
   text-decoration: underline;
 }
 
 .btn-link:hover {
-  color: #fff;
+  color: #33e0be;
   text-decoration: underline;
 }
 
@@ -10316,19 +10357,27 @@ fieldset[disabled] .btn-default.focus {
 
 .bootstrap-switch.bootstrap-switch-small {
   border-radius: var(--rounding-md);
+  border-color: #1a2744;
 }
 .bootstrap-switch.bootstrap-switch-small.bootstrap-switch-focused {
   box-shadow: 0 0 0 0.2rem rgba(51, 102, 153, 0.25);
 }
 .bootstrap-switch.bootstrap-switch-small .bootstrap-switch-handle-on {
   border-radius: 0;
+  background-color: #00d4aa;
+  color: #060b18;
 }
 .bootstrap-switch.bootstrap-switch-small .bootstrap-switch-handle-off {
   border-radius: 0;
-  background-color: var(--bg-lifted);
+  background-color: #111d3a;
+  color: #8892a4;
 }
 .bootstrap-switch.bootstrap-switch-small .bootstrap-switch-handle-off:hover {
-  background-color: var(--bg-accented);
+  background-color: #1a2744;
+}
+.bootstrap-switch .bootstrap-switch-label {
+  background-color: #0d1730;
+  border-color: #1a2744;
 }
 
 .btn.btn-success.open-modal.twofa-config-link.enable {
@@ -11606,6 +11655,12 @@ body .primary-content .btn-success.btn-lg[name=enable]:focus, body .primary-cont
   border-radius: var(--rounding-sm);
 }
 
+.md-editor > .md-header,
+.md-editor > .md-footer {
+  background: #0d1730 !important;
+  border-color: #1a2744 !important;
+}
+
 .md-editor > .btn-toolbar {
   background-color: #0d1730 !important;
 }
@@ -12470,7 +12525,7 @@ div.tweet span {
 .kb-article-item small {
   display: block;
   padding-left: 25px;
-  color: var(--bg-lifted);
+  color: #8892a4;
 }
 
 /**

@@ -44,10 +44,6 @@
                         <div class="badge-icon purple"><i class="fas fa-shield-alt"></i></div>
                         <div><div class="badge-label">DDoS Protected</div><div class="badge-sub">1 Tbps Mitigation</div></div>
                     </div>
-                    <div class="liga-float-badge float-nvme">
-                        <div class="badge-icon cyan"><i class="fas fa-bolt"></i></div>
-                        <div><div class="badge-label">NVMe Storage</div><div class="badge-sub">7,000 MB/s Read</div></div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -78,8 +74,8 @@
             <h2>Enterprise Power, Simple Experience</h2>
             <p>Every feature you need to run production workloads with confidence</p>
         </div>
-        <div class="row">
-            <div class="col-lg-8 mb-4">
+        <div class="row d-flex">
+            <div class="col-lg-8 mb-4 d-flex">
                 <div class="liga-feature-card">
                     <div class="feature-icon purple"><i class="fas fa-shield-alt"></i></div>
                     <h4>Advanced DDoS Protection</h4>
@@ -90,32 +86,32 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 mb-4">
+            <div class="col-lg-4 mb-4 d-flex">
                 <div class="liga-feature-card">
                     <div class="feature-icon cyan"><i class="fas fa-bolt"></i></div>
                     <h4>Instant Deploy</h4>
                     <p>Choose your OS, click deploy. Your server is live in under 60 seconds with full root access.</p>
                 </div>
             </div>
-            <div class="col-lg-4 mb-4">
+            <div class="col-lg-4 mb-4 d-flex">
                 <div class="liga-feature-card">
                     <div class="feature-icon blue"><i class="fas fa-network-wired"></i></div>
                     <h4>Premium Network</h4>
                     <p>Tier 1 carriers, up to 40 Gbps uplinks, ultra-low latency. BGP peering with major European and US exchanges.</p>
                 </div>
             </div>
-            <div class="col-lg-4 mb-4">
+            <div class="col-lg-4 mb-4 d-flex">
                 <div class="liga-feature-card">
                     <div class="feature-icon amber"><i class="fas fa-server"></i></div>
                     <h4>Enterprise Hardware</h4>
                     <p>AMD EPYC 7702P and Intel Xeon Platinum 8180. Samsung PM9A3 NVMe and enterprise SSDs.</p>
                 </div>
             </div>
-            <div class="col-lg-4 mb-4">
+            <div class="col-lg-4 mb-4 d-flex">
                 <div class="liga-feature-card">
                     <div class="feature-icon green"><i class="fas fa-headset"></i></div>
                     <h4>24/7 Expert Support</h4>
-                    <p>Real engineers, not chatbots. Average response time under 15 minutes via ticket system.</p>
+                    <p>Real engineers, not chatbots. Average response under 15 minutes.</p>
                     <div class="liga-stats">
                         <div><div class="stat-val">&lt;15min</div><div class="stat-label">Avg Response</div></div>
                         <div><div class="stat-val">99.9%</div><div class="stat-label">Resolution</div></div>
@@ -135,8 +131,8 @@
             <h2>Global Datacenter Network</h2>
             <p style="color:#8892a4;">4 locations across 3 continents for low-latency access worldwide</p>
         </div>
-        <div class="row">
-            <div class="col-md-6 col-lg-3 mb-4">
+        <div class="row d-flex">
+            <div class="col-md-6 col-lg-3 mb-4 d-flex">
                 <div class="liga-dc-card">
                     <div class="dc-header"><div class="dc-flag">RO</div><div><div class="dc-name">Tulcea, Romania</div><div class="dc-status"><span class="dot"></span> Online</div></div></div>
                     <div class="dc-specs">
@@ -147,7 +143,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3 mb-4">
+            <div class="col-md-6 col-lg-3 mb-4 d-flex">
                 <div class="liga-dc-card">
                     <div class="dc-header"><div class="dc-flag">DE</div><div><div class="dc-name">Frankfurt, Germany</div><div class="dc-status"><span class="dot"></span> Online</div></div></div>
                     <div class="dc-specs">
@@ -158,7 +154,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3 mb-4">
+            <div class="col-md-6 col-lg-3 mb-4 d-flex">
                 <div class="liga-dc-card">
                     <div class="dc-header"><div class="dc-flag">NL</div><div><div class="dc-name">Amsterdam, Netherlands</div><div class="dc-status"><span class="dot"></span> Online</div></div></div>
                     <div class="dc-specs">
@@ -169,7 +165,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3 mb-4">
+            <div class="col-md-6 col-lg-3 mb-4 d-flex">
                 <div class="liga-dc-card">
                     <div class="dc-header"><div class="dc-flag">US</div><div><div class="dc-name">Los Angeles, USA</div><div class="dc-status"><span class="dot"></span> Online</div></div></div>
                     <div class="dc-specs">

@@ -281,7 +281,7 @@ body.homepage-page .master-breadcrumb { display: none; }
 .liga-feature-card {
     background: #0d1730; border: 1px solid #1a2744;
     border-radius: 12px; padding: 24px; height: 100%;
-    transition: all 0.25s;
+    transition: all 0.25s; display: flex; flex-direction: column;
 }
 .liga-feature-card:hover {
     border-color: #1e3a5f;
@@ -329,9 +329,10 @@ body.homepage-page .master-breadcrumb { display: none; }
 .liga-dc-card {
     background: #0d1730; border: 1px solid #1a2744;
     border-radius: 12px; padding: 22px; transition: all 0.25s;
+    height: 100%; display: flex; flex-direction: column;
 }
 .liga-dc-card:hover { border-color: var(--liga-cyan); box-shadow: 0 0 15px rgba(0,212,170,0.08); }
-.liga-dc-card .dc-header { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+.liga-dc-card .dc-header { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; min-height: 48px; }
 .liga-dc-card .dc-flag {
     font-weight: 800; color: #8892a4; background: #060b18;
     width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;
@@ -340,7 +341,7 @@ body.homepage-page .master-breadcrumb { display: none; }
 .liga-dc-card .dc-name { font-weight: 700; font-size: 0.95rem; color: #fff; }
 .liga-dc-card .dc-status { display: flex; align-items: center; gap: 5px; font-size: 0.78rem; color: #22c55e; }
 .liga-dc-card .dc-status .dot { width: 6px; height: 6px; background: #22c55e; border-radius: 50%; }
-.liga-dc-card .dc-specs { display: grid; grid-template-columns: 1fr 1fr; gap: 7px; font-size: 0.78rem; color: #8892a4; }
+.liga-dc-card .dc-specs { display: grid; grid-template-columns: 1fr 1fr; gap: 7px; font-size: 0.78rem; color: #8892a4; flex: 1; align-content: start; }
 .liga-dc-card .dc-specs .spec { display: flex; align-items: center; gap: 5px; }
 .liga-dc-card .dc-specs i { color: var(--liga-cyan); width: 13px; text-align: center; }
 
