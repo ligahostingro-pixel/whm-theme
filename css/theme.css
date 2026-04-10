@@ -11046,12 +11046,12 @@ body #frmDomainHomepage #btnTransfer:focus {
 }
 
 body #main-body .btn-outline-primary {
-  color: var(--text);
+  color: #a78bfa;
   border-radius: var(--rounding-md);
-  border: 1px solid var(--grayscale);
+  border: 1px solid #7c3aed;
 }
 body #main-body .btn-outline-primary:hover {
-  background-color: #111d3a;
+  background-color: #7c3aed;
   color: white;
 }
 body #main-body .action-icon-btns a {

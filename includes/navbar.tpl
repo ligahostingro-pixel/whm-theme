@@ -1,7 +1,7 @@
 {* Icon mapping for nav items *}
 {foreach $navbar as $item}
-    {* Skip Network Status *}
-    {if $item->getName() == "Network Status"}{continue}{/if}
+    {* Skip Network Status and Open Ticket from top-level nav *}
+    {if $item->getName() == "Network Status" || $item->getName() == "Open Ticket"}{continue}{/if}
     {* Determine icon based on menu name *}
     {assign var="navIcon" value=""}
     {if $item->getName() == "Home"}{assign var="navIcon" value="fas fa-home"}
@@ -39,6 +39,10 @@
                     {assign var="childIcon" value=""}
                     {if $childItem->getName() == "Services" || $childItem->getName() == "My Services"}{assign var="childIcon" value="fas fa-server"}
                     {elseif $childItem->getName() == "Domains" || $childItem->getName() == "My Domains"}{assign var="childIcon" value="fas fa-globe"}
+                    {elseif $childItem->getName() == "Renew Domains"}{assign var="childIcon" value="fas fa-sync-alt"}
+                    {elseif $childItem->getName() == "Register a New Domain"}{assign var="childIcon" value="fas fa-plus"}
+                    {elseif $childItem->getName() == "Transfer Domains to Us"}{assign var="childIcon" value="fas fa-exchange-alt"}
+                    {elseif $childItem->getName() == "Domain Search"}{assign var="childIcon" value="fas fa-search"}
                     {elseif $childItem->getName() == "Billing" || $childItem->getName() == "My Invoices"}{assign var="childIcon" value="fas fa-file-invoice-dollar"}
                     {elseif $childItem->getName() == "Invoices"}{assign var="childIcon" value="fas fa-file-invoice"}
                     {elseif $childItem->getName() == "Tickets" || $childItem->getName() == "Support Tickets"}{assign var="childIcon" value="fas fa-ticket-alt"}
@@ -65,6 +69,8 @@
                     {elseif $childItem->getName() == "Home"}{assign var="childIcon" value="fas fa-home"}
                     {elseif $childItem->getName() == "Store" || $childItem->getName() == "Order New Services"}{assign var="childIcon" value="fas fa-shopping-cart"}
                     {elseif $childItem->getName() == "Manage SSL"}{assign var="childIcon" value="fas fa-lock"}
+                    {elseif $childItem->getName() == "View Available Addons"}{assign var="childIcon" value="fas fa-puzzle-piece"}
+                    {else}{assign var="childIcon" value="fas fa-angle-right"}
                     {/if}
                     <li menuItemName="{$childItem->getName()}" class="dropdown-item{if $childItem->getClass()} {$childItem->getClass()}{/if}" id="{$childItem->getId()}">
                         <a href="{$childItem->getUri()}" class="dropdown-item px-2 py-0"{if $childItem->getAttribute('target')} target="{$childItem->getAttribute('target')}"{/if}>
