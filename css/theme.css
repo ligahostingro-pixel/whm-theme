@@ -11034,15 +11034,17 @@ body #frmDomainHomepage .btn:hover, body #frmDomainHomepage .btn:focus, body #fr
   border-color: var(--grayscale-lifted);
 }
 body #frmDomainHomepage #btnTransfer {
-  background: #0d1730;
-  border-color: var(--grayscale);
+  background: transparent;
+  border: 1px solid #00d4aa;
+  color: #00d4aa;
 }
 body #frmDomainHomepage #btnTransfer:hover, body #frmDomainHomepage #btnTransfer:focus, body #frmDomainHomepage #btnTransfer:active {
-  background: var(--grayscale-lifted);
-  border-color: var(--grayscale-lifted);
+  background: #00d4aa;
+  border-color: #00d4aa;
+  color: #060b18;
 }
 body #frmDomainHomepage #btnTransfer:focus {
-  box-shadow: 0 0 0 0.2rem rgba(51, 102, 153, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(0, 212, 170, 0.25);
 }
 
 body #main-body .btn-outline-primary {
@@ -11099,7 +11101,7 @@ body #main-body .action-icon-btns a {
 .client-home-cards .list-group .list-group-item {
   padding: 4px 10px;
   border: 0;
-  border-bottom: 1px solid #1a2744;
+  border-bottom: 1px solid #1a2744 !important;
 }
 .client-home-cards .list-group .list-group-item:last-child {
   border-bottom: 0;

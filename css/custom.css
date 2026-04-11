@@ -438,21 +438,21 @@ body.homepage-page .master-breadcrumb { display: none; }
         margin: 2px 0 6px 10px;
         box-shadow: none;
     }
-    #mainNavbar .dropdown-menu .dropdown-item {
-        padding: 0;
+    #mainNavbar .dropdown-menu .nav-dd-item {
+        list-style: none;
     }
-    #mainNavbar .dropdown-menu .dropdown-item a {
+    #mainNavbar .dropdown-menu .dropdown-item {
         color: #a0aec0;
         padding: 8px 14px;
         font-size: 14px;
         display: block;
     }
-    #mainNavbar .dropdown-menu .dropdown-item a:hover {
+    #mainNavbar .dropdown-menu .dropdown-item:hover {
         color: #fff;
         background: #1a2744;
         border-radius: 0 4px 4px 0;
     }
-    #mainNavbar .dropdown-menu .dropdown-item a i {
+    #mainNavbar .dropdown-menu .dropdown-item i {
         width: 20px;
         text-align: center;
         color: #8892a4;
@@ -486,17 +486,17 @@ body.homepage-page .master-breadcrumb { display: none; }
         min-width: 220px;
         box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
     }
-    header.header .dropdown-menu .dropdown-item a {
+    header.header .dropdown-menu .dropdown-item {
         padding: 7px 14px;
-        border-radius: 4px;
-        margin: 1px 4px;
+        border-radius: 0;
+        margin: 0;
     }
-    header.header .dropdown-menu .dropdown-item a i {
+    header.header .dropdown-menu .dropdown-item i {
         width: 22px;
         text-align: center;
         opacity: 0.7;
     }
-    header.header .dropdown-menu .dropdown-item a:hover i {
+    header.header .dropdown-menu .dropdown-item:hover i {
         opacity: 1;
         color: #00d4aa;
     }
@@ -506,6 +506,16 @@ body.homepage-page .master-breadcrumb { display: none; }
 @media (max-width: 991px) {
     .liga-features { padding: 40px 0; }
     .liga-datacenters { padding: 40px 0; }
+    .liga-datacenters .row.d-flex {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+    }
+    .liga-datacenters .row.d-flex > [class*="col-"] {
+        max-width: 100%;
+        flex: none;
+        width: 100%;
+    }
     .liga-hero { padding: 40px 0 35px; }
     .liga-terminal .terminal-body { font-size: 0.75rem; }
 }
@@ -537,6 +547,9 @@ body.homepage-page .master-breadcrumb { display: none; }
     .liga-icon-strip .strip-item { font-size: 0.72rem; gap: 4px; }
     .liga-features { padding: 30px 0; }
     .liga-datacenters { padding: 30px 0; }
+    .liga-datacenters .row.d-flex {
+        grid-template-columns: 1fr;
+    }
     .liga-feature-card { padding: 18px; }
     .liga-feature-card h4 { font-size: 0.92rem; }
     .liga-feature-card p { font-size: 0.82rem; }

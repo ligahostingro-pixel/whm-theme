@@ -72,8 +72,8 @@
                     {elseif $childItem->getName() == "View Available Addons"}{assign var="childIcon" value="fas fa-puzzle-piece"}
                     {else}{assign var="childIcon" value="fas fa-angle-right"}
                     {/if}
-                    <li menuItemName="{$childItem->getName()}" class="dropdown-item{if $childItem->getClass()} {$childItem->getClass()}{/if}" id="{$childItem->getId()}">
-                        <a href="{$childItem->getUri()}" class="dropdown-item px-2 py-0"{if $childItem->getAttribute('target')} target="{$childItem->getAttribute('target')}"{/if}>
+                    <li menuItemName="{$childItem->getName()}" class="nav-dd-item{if $childItem->getClass()} {$childItem->getClass()}{/if}" id="{$childItem->getId()}">
+                        <a href="{$childItem->getUri()}" class="dropdown-item"{if $childItem->getAttribute('target')} target="{$childItem->getAttribute('target')}"{/if}>
                             {if $childItem->hasIcon()}<i class="{$childItem->getIcon()} fa-fw"></i>&nbsp;
                             {elseif $childIcon}<i class="{$childIcon} fa-fw"></i>&nbsp;{/if}
                             {$childItem->getLabel()}
